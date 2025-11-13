@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  padding: 1em 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  #logo-desktop {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  #header1 {
+    gap: 1em;
+    display: flex;
+    align-items: center;
+  }
+
+  #logo {
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+  }
+
+  #hamburger {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+  }
+
+  #login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    a {
+      color: #6861f3;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      list-style: none;
+    }
+    button {
+      margin-left: 1.5em;
+      background-color: #6861f3;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #392ff3;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+main {
+  background-color: #d7f9d2;
+  color: #037736;
+  padding-bottom: 1em;
+}
+
+#contact-us {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
+  #contact {
+    display: flex;
+    flex-direction: column;
+  }
+  #email-cont {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+  }
+  #subject-cont {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+  }
+  #message-cont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    border-radius: 16px;
+        border: none;
+  }
+
+  textarea {
+        border-radius: 16px;
+        border: none;
+    }
+
+  .form-div {
+    margin-bottom: 1em;
+  }
+  button {
+    align-self: center;
+    background-color: #6861f3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #392ff3;
+  }
+}
+
+#contact-info-section {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 12px;
+  margin: 1em;
+  background-color: white;
+  .info-item {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .icon {
+      height: 20px;
+      margin-right: 1em;
+    }
+  }
+}
+
+#map-container {
+  display: flex;
+  flex-direction: column;
+
+  height: 12em;
+  border-radius: 12px;
+  margin: 1em;
+  background-color: white;
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-bottom: 1em;
+  }
+  li {
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    #hamburger {
+      display: none;
+    }
+    #logo {
+      display: none;
+    }
+    #logo-desktop {
+      display: block;
+      width: 100px;
+      margin-left: 3em;
+    }
+    #login {
+      margin-right: 3em;
+    }
+    nav {
+      display: block;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+    }
+    li {
+      margin-right: 1em;
+    }
+    a {
+      color: #037736;
+      text-decoration: none;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80vh;
+    padding-top: 2em;
+  }
+}
