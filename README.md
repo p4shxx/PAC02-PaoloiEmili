@@ -37,3 +37,5 @@ erpcrm-pac2/
 └── README.md
 
 Puedes acceder a la web publicada en GitHub Pages en el siguiente enlace:
+https://p4shxx.github.io/PAC02-PaoloiEmili/
+
